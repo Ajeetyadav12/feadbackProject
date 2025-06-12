@@ -20,7 +20,7 @@ function App() {
     formData.append("audio", file);
 
     const res = await axios.post(
-      "http://localhost:5000/api/analyze-call",
+      "https://feadbackproject.onrender.com/api/analyze-call",
       formData
     );
     setFeedback(res.data);
